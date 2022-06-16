@@ -179,62 +179,23 @@
       backDelay: 2000,
     });
   }
+
   /**
    * Sections Animation
-   */
-  const aboutMe = select("#about .container");
-  const progressBar = select(".progress", (all = true));
-  const serviceCards = select(".service-box", (all = true));
-  const cards = select("#features .card", (all = true));
-  const priceCards = select("#pricing .card", (all = true));
-  const contact = select("#contact .contactContainer");
-  const portfolioCards = select("#work .work-box", (all = true));
-  const sections = select("section", (all = true));
+   **/
+  const showSkillBar = () => {
+    const skillsBar = select(".progress", true);
+    const aboutSection = select("#about", false);
+    let position = window.window.scrollY + 200;
 
-  sections.forEach((sec) => {
-    console.log(sec.offsetTop);
-  });
+    if (position >= aboutSection.offsetTop) {
+      skillsBar.forEach((skill) => skill.classList.add("active"));
+    } else {
+      skillsBar.forEach((skill) => skill.classList.remove("active"));
+    }
+  };
 
-  window.addEventListener("scroll", () => {
-    // console.log(window.scrollY);
-    if (window.scrollY > 400) {
-      aboutMe.classList.add("active");
-    } else {
-      aboutMe.classList.remove("active");
-    }
-    if (window.scrollY > 750) {
-      progressBar.forEach((progr) => {
-        progr.classList.add("active");
-      });
-    } else {
-      progressBar.forEach((progr) => {
-        progr.classList.remove("active");
-      });
-    }
-    if (window.scrollY > 1200) {
-      serviceCards.forEach((card) => {
-        card.classList.add("active");
-      });
-    } else {
-      serviceCards.forEach((card) => {
-        card.classList.remove("active");
-      });
-    }
-    if (window.scrollY > 1200) {
-      portfolioCards.forEach((card) => {
-        card.classList.add("active");
-      });
-    } else {
-      portfolioCards.forEach((card) => {
-        card.classList.remove("active");
-      });
-    }
-    if (window.scrollY > 2840) {
-      contact.classList.add("active");
-    } else {
-      contact.classList.remove("active");
-    }
-  });
+  window.addEventListener("scroll", showSkillBar);
 
   /**
    * Initiate portfolio lightbox
@@ -253,3 +214,14 @@
     });
   }
 })();
+
+/**
+ * AOS animation
+ */
+
+$(function () {
+  AOS.init({
+    duration: 800,
+    anchorPlacement: "center-bottom",
+  });
+});

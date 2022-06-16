@@ -27,6 +27,9 @@
     />
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
+    <!-- AOS library -->
+    <link rel="stylesheet" href="assets/css/aos.css" />
+
     <!-- main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
@@ -132,7 +135,7 @@
 
     <main id="main">
       <!-- ======= About Section ======= -->
-      <section id="about" class="about-mf sect-pt4 route">
+      <section id="about" class="about-mf sect-pt4 route" data-aos="fade-up">
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
@@ -182,7 +185,7 @@
                           aria-valuemax="100"
                         ></div>
                       </div>
-                      <span>CSS3</span> <span class="pull-right">90%</span>
+                      <span>CSS</span> <span class="pull-right">90%</span>
                       <div class="progress">
                         <div
                           class="progress-bar css"
@@ -192,12 +195,12 @@
                           aria-valuemax="100"
                         ></div>
                       </div>
-                      <span>Bootstrap</span> <span class="pull-right">80%</span>
+                      <span>Bootstrap</span> <span class="pull-right">90%</span>
                       <div class="progress">
                         <div
                           class="progress-bar bootstrap"
                           role="progressbar"
-                          aria-valuenow="80"
+                          aria-valuenow="90"
                           aria-valuemin="0"
                           aria-valuemax="100"
                         ></div>
@@ -263,26 +266,27 @@
                       <div class="title-box-2">
                         <h5 class="title-left">About me</h5>
                       </div>
-                      <p class="lead">
-                        After graduating from the College of Engineering as
-                        Mechanics engineer back to 2020, But I had a great
-                        desire in programming so I start learn more about it,
-                        and it's take me about two months until I learn the
-                        basics using C++,after that I choose the Web development
-                        world through the FrontEnd and I love this area so much
-                        cause I learned lot from it.
-                      </p>
-                      <p class="lead">
-                        After spending 6 months learning the frontend
-                        techniques, I learned the basics and beyond, I made a
-                        lot of projects. <br />
-                        And now I am Enthusiastic for the Web development world
-                        to make success through hard work. I have Attention to
-                        detail and excellent organizational skills. A clear
-                        understanding of HTML & its semantic elements, CSS, JS,
-                        and also familiar with SASS and React frameworks. <br />
-                        Love to learn, grow and excel in my programming skill
-                      </p>
+                      <div class="aboutInfo">
+                        <p class="lead">
+                          Independent Front-End developer with 1 years of
+                          building website UI Enthusiastic for the Web
+                          development world to make success through hard work.
+                        </p>
+                        <p class="lead">
+                          Attention to detail and excellent organizational
+                          skills. A clear understanding of HTM & it's semantic
+                          elements, CSS, JS, Bootstrap and also familiar with
+                          SASS & React Libraries and Angular framework.
+                        </p>
+                        <p class="lead">
+                          Designed dynamic and browser compatible pages, Built
+                          single page applications Using React Angular
+                          frameworks.
+                        </p>
+                        <p class="lead">
+                          Love to learn, grow and excel in my programing skill
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -306,7 +310,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-4 sevCard">
+            <div class="col-md-4 sevCard" data-aos="fade-up">
               <div class="service-box">
                 <div class="service-ico">
                   <span class="ico-circle"
@@ -323,7 +327,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 sevCard">
+            <div
+              class="col-md-4 sevCard"
+              data-aos-delay="200"
+              data-aos="fade-up"
+            >
               <div class="service-box">
                 <div class="service-ico">
                   <span class="ico-circle"
@@ -340,7 +348,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 sevCard">
+            <div
+              class="col-md-4 sevCard"
+              data-aos-delay="400"
+              data-aos="fade-up"
+            >
               <div class="service-box">
                 <div class="service-ico">
                   <span class="ico-circle"
@@ -387,30 +399,244 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4">
+          <!-- work-01 -->
+          <div class="col-md-4" data-aos="fade-up">
             <div class="work-box">
-              <a
-                href="assets/img/work-1.jpg"
-                data-gallery="portfolioGallery"
-                class="portfolio-lightbox"
-              >
-                <div class="work-img">
-                  <img src="assets/img/work-1.jpg" alt="" class="img-fluid" />
-                </div>
-              </a>
+              <div class="work-img">
+                <img src="assets/img/work-1.png" alt="" class="img-fluid" />
+              </div>
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Lorem impsum dolor</h2>
+                    <h2 class="w-title">Digital Marketing</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> /
-                      <span class="w-date">18 Sep. 2018</span>
+                      <span class="w-ctegory">Web Design</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <a href="portfolio-details.html">
-                        <span class="bi bi-plus-circle"></span
+                      <a
+                        href="https://Shams425.github.io/Templates/Project 1"
+                        title="live demo"
+                      >
+                        <i class="bi bi-arrow-90deg-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- work-02-->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="work-box">
+              <div class="work-img">
+                <img src="assets/img/work-2.png" alt="" class="img-fluid" />
+              </div>
+
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Web Host</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a
+                        href="https://Shams425.github.io/Templates/Project 2"
+                        title="live demo"
+                      >
+                        <i class="bi bi-arrow-90deg-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- work-03 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="work-box">
+              <div class="work-img">
+                <img src="assets/img/work-3.png" alt="" class="img-fluid" />
+              </div>
+
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Chain</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a
+                        href="https://Shams425.github.io/Templates/Project 5"
+                        title="live demo"
+                      >
+                        <i class="bi bi-arrow-90deg-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- work-04 -->
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="work-box">
+              <div class="work-img">
+                <img src="assets/img/work-4.png" alt="" class="img-fluid" />
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Klassy Cafe</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a
+                        href="https://Shams425.github.io/Templates/Project 4"
+                        title="live demo"
+                      >
+                        <i class="bi bi-arrow-90deg-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- work-05 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="work-box">
+              <div class="work-img">
+                <img src="assets/img/work-5.png" alt="" class="img-fluid" />
+              </div>
+
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">TSI Quality</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a
+                        href="https://Shams425.github.io/Templates/Project 6"
+                        title="live demo"
+                      >
+                        <i class="bi bi-arrow-90deg-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- work-06 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="work-box">
+              <div class="work-img">
+                <img src="assets/img/work-7.png" alt="" class="img-fluid" />
+              </div>
+
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Autumn Design</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web design</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a
+                        href="https://Shams425.github.io/Templates/Autumn design"
+                        title="live demo"
+                      >
+                        <i class="bi bi-arrow-90deg-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- work-07 -->
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="work-box">
+              <div class="work-img">
+                <img
+                  src="assets/img/react-work-01.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Form Validation</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">React app</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a
+                        href="https://Shams425.github.io/React-apps/Form-Validation/puplic"
+                        title="live demo"
+                      >
+                        <i class="bi bi-arrow-90deg-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- work-08 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="work-box">
+              <div class="work-img">
+                <img
+                  src="assets/img/react-work-02.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">CSS assets tools</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">React app</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a
+                        href="https://Shams425.github.io/React-apps/Web-Design-Tools/puplic"
+                        title="live demo"
+                      >
+                        <i class="bi bi-arrow-90deg-right"></i
                       ></a>
                     </div>
                   </div>
@@ -418,30 +644,33 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+
+          <!-- work-09 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
             <div class="work-box">
-              <a
-                href="assets/img/work-2.jpg"
-                data-gallery="portfolioGallery"
-                class="portfolio-lightbox"
-              >
-                <div class="work-img">
-                  <img src="assets/img/work-2.jpg" alt="" class="img-fluid" />
-                </div>
-              </a>
+              <div class="work-img">
+                <img
+                  src="assets/img/react-work-03.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Loreda Cuno Nere</h2>
+                    <h2 class="w-title">Admin DashBoard</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> /
-                      <span class="w-date">18 Sep. 2018</span>
+                      <span class="w-ctegory">React app</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <a href="portfolio-details.html">
-                        <span class="bi bi-plus-circle"></span
+                      <a
+                        href="https://Shams425.github.io/React-apps/DashBoard-app/puplic"
+                        title="live demo"
+                      >
+                        <i class="bi bi-arrow-90deg-right"></i
                       ></a>
                     </div>
                   </div>
@@ -449,30 +678,88 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+
+          <!-- work-10 -->
+          <div class="col-md-4" data-aos="fade-up">
             <div class="work-box">
-              <a
-                href="assets/img/work-3.jpg"
-                data-gallery="portfolioGallery"
-                class="portfolio-lightbox"
-              >
-                <div class="work-img">
-                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid" />
-                </div>
-              </a>
+              <div class="work-img showBorder">
+                <img src="assets/img/js-work-01.png" alt="" class="img-fluid" />
+              </div>
+
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Mavrito Lana Dere</h2>
+                    <h2 class="w-title">Guess the number Game</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> /
-                      <span class="w-date">18 Sep. 2018</span>
+                      <span class="w-ctegory">Javascript</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <a href="portfolio-details.html">
-                        <span class="bi bi-plus-circle"></span
+                      <a
+                        href="https://Shams425.github.io/APPS/Guess the Number"
+                        title="live demo"
+                      >
+                        <i class="bi bi-arrow-90deg-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- work-11 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="work-box">
+              <div class="work-img showBorder">
+                <img src="assets/img/js-work-02.png" alt="" class="img-fluid" />
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Password Generator</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Javascript</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a
+                        href="https://Shams425.github.io/APPS/Password Genearator"
+                        title="live demo"
+                      >
+                        <i class="bi bi-arrow-90deg-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- work-12 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="work-box">
+              <div class="work-img showBorder">
+                <img src="assets/img/js-work-03.png" alt="" class="img-fluid" />
+              </div>
+
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Rock-Paper-Scissor Game</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Javascript</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a
+                        href="https://Shams425.github.io/APPS/rock-paper-scissors Game"
+                        title="live demo"
+                      >
+                        <i class="bi bi-arrow-90deg-right"></i
                       ></a>
                     </div>
                   </div>
@@ -480,93 +767,58 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+
+          <!-- work-13 -->
+          <div class="col-md-4" data-aos="fade-up">
             <div class="work-box">
-              <a
-                href="assets/img/work-4.jpg"
-                data-gallery="portfolioGallery"
-                class="portfolio-lightbox"
-              >
-                <div class="work-img">
-                  <img src="assets/img/work-4.jpg" alt="" class="img-fluid" />
-                </div>
-              </a>
+              <div class="work-img">
+                <img src="assets/img/js-work-04.png" alt="" class="img-fluid" />
+              </div>
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Bindo Laro Cado</h2>
+                    <h2 class="w-title">CountDown</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> /
-                      <span class="w-date">18 Sep. 2018</span>
+                      <span class="w-ctegory">Javascript</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <a href="portfolio-details.html">
-                        <span class="bi bi-plus-circle"></span
-                      ></a>
+                      <a
+                        href="https://Shams425.github.io/APPS/Time-Counter"
+                        title="live demo"
+                      >
+                        <i class="bi bi-arrow-90deg-right"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+
+          <!-- work-14 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
             <div class="work-box">
-              <a
-                href="assets/img/work-5.jpg"
-                data-gallery="portfolioGallery"
-                class="portfolio-lightbox"
-              >
-                <div class="work-img">
-                  <img src="assets/img/work-5.jpg" alt="" class="img-fluid" />
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Lena Mado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> /
-                      <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html">
-                        <span class="bi bi-plus-circle"></span
-                      ></a>
-                    </div>
-                  </div>
-                </div>
+              <div class="work-img showBorder">
+                <img src="assets/img/js-work-05.png" alt="" class="img-fluid" />
               </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a
-                href="assets/img/work-6.jpg"
-                data-gallery="portfolioGallery"
-                class="portfolio-lightbox"
-              >
-                <div class="work-img">
-                  <img src="assets/img/work-6.jpg" alt="" class="img-fluid" />
-                </div>
-              </a>
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Studio Big Bang</h2>
+                    <h2 class="w-title">Calculator</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> /
-                      <span class="w-date">18 Sep. 2017</span>
+                      <span class="w-ctegory">Javascript</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <a href="portfolio-details.html">
-                        <span class="bi bi-plus-circle"></span
-                      ></a>
+                      <a
+                        href="https://Shams425.github.io/APPS/Calculator"
+                        title="live demo"
+                      >
+                        <i class="bi bi-arrow-90deg-right"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -578,121 +830,135 @@
     </section>
     <!-- End Portfolio Section -->
 
-    <!-- ======= Contact Section ======= -->
-    <section
+    <!-- ======= Contact & Footer Section ======= -->
+    <div
       id="contact"
-      class="paralax-mf footer-paralax bg-image sect-mt4 route"
-      style="background-image: url(assets/img/overlay-bg.jpg)"
+      class="contact-footer"
+      style="position: relative; object-fit: cover; width: 100%; height: 100%"
     >
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
-                <div class="row contactContainer">
-                  <div class="col-md-6 slide-left">
-                    <div class="title-box-2">
-                      <h5 class="title-left">Send Message Us</h5>
+      <img
+        src="assets/img/overlay-bg.jpg"
+        alt=""
+        style="
+          position: absolute;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+        "
+      />
+      <!-- ======= Contact Section ======= -->
+      <section class="paralax-mf footer-paralax bg-image route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="contact-mf">
+                <div class="box-shadow-full">
+                  <div class="row contactContainer">
+                    <div class="col-md-6 slide-left" data-aos="fade-right">
+                      <div class="title-box-2">
+                        <h5 class="title-left">Send Message Us</h5>
+                      </div>
+                      <div>
+                        <form
+                          action="forms/contact.php"
+                          method="post"
+                          role="form"
+                          class="php-email-form"
+                        >
+                          <div class="row">
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  name="name"
+                                  class="form-control"
+                                  id="name"
+                                  placeholder="Your Name"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  name="email"
+                                  id="email"
+                                  placeholder="Your Email"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  name="subject"
+                                  id="subject"
+                                  placeholder="Subject"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <textarea
+                                  class="form-control"
+                                  name="message"
+                                  rows="5"
+                                  placeholder="Message"
+                                  required
+                                ></textarea>
+                              </div>
+                            </div>
+                            <div class="col-md-12 text-center my-3">
+                              <div class="loading">Loading</div>
+                              <div class="error-message"></div>
+                              <div class="sent-message">
+                                Your message has been sent. Thank you!
+                              </div>
+                            </div>
+                            <div class="col-md-12 text-center">
+                              <button
+                                type="submit"
+                                class="button button-a button-big button-rouded"
+                              >
+                                Send Message
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
                     </div>
-                    <div>
-                      <form
-                        action="forms/contact.php"
-                        method="post"
-                        role="form"
-                        class="php-email-form"
-                      >
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input
-                                type="text"
-                                name="name"
-                                class="form-control"
-                                id="name"
-                                placeholder="Your Name"
-                                required
-                              />
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input
-                                type="email"
-                                class="form-control"
-                                name="email"
-                                id="email"
-                                placeholder="Your Email"
-                                required
-                              />
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input
-                                type="text"
-                                class="form-control"
-                                name="subject"
-                                id="subject"
-                                placeholder="Subject"
-                                required
-                              />
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea
-                                class="form-control"
-                                name="message"
-                                rows="5"
-                                placeholder="Message"
-                                required
-                              ></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">
-                              Your message has been sent. Thank you!
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button
-                              type="submit"
-                              class="button button-a button-big button-rouded"
-                            >
-                              Send Message
-                            </button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-6 slide-right">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">Get in Touch</h5>
-                    </div>
-                    <div class="more-info">
-                      <p class="lead">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Facilis dolorum dolorem soluta quidem expedita aperiam
-                        aliquid at. Totam magni ipsum suscipit amet? Autem nemo
-                        esse laboriosam ratione nobis mollitia inventore?
-                      </p>
-                      <ul class="list-ico">
-                        <li>
-                          <span class="bi bi-geo-alt"></span> East Alkalkla -
-                          3th Station - Khartoum
-                        </li>
-                        <li>
-                          <span class="bi bi-phone"></span> (249) 905836332
-                        </li>
-                        <li>
-                          <span class="bi bi-envelope"></span>
-                          shamsmohamed425@gmail.com
-                        </li>
-                      </ul>
+                    <div class="col-md-6 slide-right" data-aos="fade-left">
+                      <div class="title-box-2 pt-4 pt-md-0">
+                        <h5 class="title-left">Get in Touch</h5>
+                      </div>
+                      <div class="more-info">
+                        <p class="lead">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Facilis dolorum dolorem soluta quidem expedita
+                          aperiam aliquid at. Totam magni ipsum suscipit amet?
+                          Autem nemo esse laboriosam ratione nobis mollitia
+                          inventore?
+                        </p>
+                        <ul class="list-ico">
+                          <li>
+                            <span class="bi bi-geo-alt"></span> East Alkalkla -
+                            3th Station - Khartoum
+                          </li>
+                          <li>
+                            <span class="bi bi-phone"></span> (249) 905836332
+                          </li>
+                          <li>
+                            <span class="bi bi-envelope"></span>
+                            shamsmohamed425@gmail.com
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -700,113 +966,105 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- End Contact Section -->
+      </section>
+      <!-- End Contact Section -->
 
-    <!-- ======= Footer ======= -->
-    <footer>
-      <div class="container d-flex flex-column justify-content-center">
-        <div class="logo">
-          <img src="assets/img/logo192.png" alt="" />
-          <h3>DevFolio</h3>
+      <!-- ======= Footer ======= -->
+      <footer>
+        <div class="container d-flex flex-column justify-content-center">
+          <div class="socials">
+            <ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/shams.alden.106/"
+                  target="_blank"
+                  ><span class="ico-circle"><i class="bi bi-facebook"></i></span
+                ></a>
+              </li>
+              <!-- <li>
+                <a
+                  href="https://www.instagram.com/shams_aldeen425/"
+                  target="_blank"
+                  ><span class="ico-circle"><i class="bi bi-instagram"></i></span
+                ></a>
+              </li> -->
+              <li>
+                <a href="https://twitter.com/shamsalden7" target="_blank"
+                  ><span class="ico-circle"><i class="bi bi-twitter"></i></span
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/shams-aldeen-mohamed-77aba1180/"
+                  target="_blank"
+                  ><span class="ico-circle"><i class="bi bi-linkedin"></i></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <nav id="navbar" class="navbar justify-content-center">
+            <ul class="footerLinks d-flex">
+              <li>
+                <a class="nav-link scrollto active" href="#hero">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                  Home</a
+                >
+              </li>
+              <li>
+                <a class="nav-link scrollto" href="#about">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                  About</a
+                >
+              </li>
+              <li>
+                <a class="nav-link scrollto" href="#services">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                  Services</a
+                >
+              </li>
+              <li>
+                <a class="nav-link scrollto" href="#work">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                  Work</a
+                >
+              </li>
+
+              <li>
+                <a class="nav-link scrollto" href="#contact">
+                  <span class="left"></span>
+                  <span class="right"></span>
+                  Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="socials">
-          <ul>
-            <li>
-              <a
-                href="https://www.facebook.com/shams.alden.106/"
-                target="_blank"
-                ><span class="ico-circle"><i class="bi bi-facebook"></i></span
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/shams_aldeen425/"
-                target="_blank"
-                ><span class="ico-circle"><i class="bi bi-instagram"></i></span
-              ></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/shamsalden7" target="_blank"
-                ><span class="ico-circle"><i class="bi bi-twitter"></i></span
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/shams-aldeen-mohamed-77aba1180/"
-                target="_blank"
-                ><span class="ico-circle"><i class="bi bi-linkedin"></i></span
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <nav id="navbar" class="navbar justify-content-center">
-          <ul class="footerLinks d-flex">
-            <li>
-              <a class="nav-link scrollto active" href="#hero">
-                <span class="left"></span>
-                <span class="right"></span>
-                Home</a
-              >
-            </li>
-            <li>
-              <a class="nav-link scrollto" href="#about">
-                <span class="left"></span>
-                <span class="right"></span>
-                About</a
-              >
-            </li>
-            <li>
-              <a class="nav-link scrollto" href="#services">
-                <span class="left"></span>
-                <span class="right"></span>
-                Services</a
-              >
-            </li>
-            <li>
-              <a class="nav-link scrollto" href="#work">
-                <span class="left"></span>
-                <span class="right"></span>
-                Work</a
-              >
-            </li>
-            <li>
-              <a class="nav-link scrollto" href="#pricing">
-                <span class="left"></span>
-                <span class="right"></span>
-                pricing</a
-              >
-            </li>
-            <li>
-              <a class="nav-link scrollto" href="#contact">
-                <span class="left"></span>
-                <span class="right"></span>
-                Contact</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="author row mt-3 p-3">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">
-              &copy; Copyright 2022 <strong>SAM Design</strong>. All Rights
-              Reserved
-            </p>
+        <div class="author row mt-3 p-3">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">
+                &copy; Copyright 2022 <strong>SAM Design</strong>. All Rights
+                Reserved
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
     <!-- End  Footer -->
 
     <div id="preloader"></div>
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+    <div class="backTopTopButton" role="button">
+      <a
+        href="#"
+        class="back-to-top d-flex align-items-center justify-content-center"
+        ><i class="bi bi-arrow-up-short"></i
+      ></a>
+    </div>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter.js"></script>
@@ -815,6 +1073,8 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/typed.js/typed.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/aos.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>

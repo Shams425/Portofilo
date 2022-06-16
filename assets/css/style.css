@@ -98,7 +98,7 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: #0078ff;
+  background-color: #0078ff63;
 }
 
 .overlay-mf {
@@ -235,6 +235,9 @@ a:hover {
 .socials ul li {
   display: inline-block;
 }
+.socials ul li i {
+  color: white;
+}
 .socials .ico-circle {
   height: 35px;
   width: 35px;
@@ -242,8 +245,11 @@ a:hover {
   border-radius: 50%;
   line-height: 1.6;
   margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px #0078ff;
+  box-shadow: 0 0 0 3px #f2f3f5;
   transition: all 500ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .socials .ico-circle:hover {
   background-color: #0078ff;
@@ -813,18 +819,13 @@ a:hover {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+#about {
+  background-color: #d1d1d14a;
+}
 
 /* for the animation */
 #about .container {
   position: relative;
-  top: 300px;
-  opacity: 0;
-  transition: all 0.8s ease-in-out;
-}
-#about .active {
-  transition: all 0.8s ease-in-out;
-  top: 0;
-  opacity: 1;
 }
 
 .about-mf .box-shadow-full {
@@ -869,7 +870,7 @@ a:hover {
   transition-delay: 200ms;
 }
 #about .skill-mf .active .bootstrap {
-  width: 80%;
+  width: 90%;
   transition-delay: 500ms;
 }
 #about .skill-mf .active .js {
@@ -902,20 +903,13 @@ a:hover {
 
 .service-box {
   position: relative;
-  top: 150px;
   background-color: #fff;
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
   text-align: center;
-  opacity: 0;
-  top: 100px;
   transition: all 0.5s ease-in-out;
-}
-#services div.active {
-  opacity: 1;
-  top: 0;
-  transition: all 0.5s ease-in-out;
+  box-shadow: 3px 5px 12px 0px #00000059;
 }
 
 .service-box:hover .ico-circle {
@@ -949,144 +943,37 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
-# Features
---------------------------------------------------------------*/
-#features img {
-  width: 70px;
-  height: 70px;
-}
-#features .card {
-  margin: 10px 0;
-  min-height: 380px;
-  position: relative;
-  top: 200px;
-  opacity: 0;
-  transition: all 0.9s ease-in-out;
-}
-
-#features .active {
-  opacity: 1;
-  top: 0;
-  transition: all 0.9s ease-in-out;
-}
-@keyframes cardFadeUp {
-  0% {
-    top: 200px;
-    opacity: 0;
-  }
-  100% {
-    top: 0px;
-    opacity: 1;
-  }
-}
-#features .card-head {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 10px 0;
-}
-
-/*--------------------------------------------------------------
-# Princing
---------------------------------------------------------------*/
-#pricing .card {
-  padding: 10px;
-  border-radius: 0;
-  margin: 10px;
-  position: relative;
-  right: 100px;
-  opacity: 0;
-  transition: all 0.9s ease-in-out;
-}
-#pricing .active {
-  opacity: 1;
-  right: 0;
-  transition: all 0.9s ease-in-out;
-}
-#pricing .card .card-head {
-  text-align: center;
-  margin: 10px 0 0 5px;
-}
-#pricing .card .card-head p {
-  font-size: 30px;
-  font-weight: 100;
-}
-#pricing .card .card-body ul {
-  margin: 10px 0;
-  padding: 0;
-  list-style: none;
-}
-#pricing .card .card-body ul li {
-  padding: 10px 0;
-}
-#pricing .card .card-bottom {
-  display: flex;
-  justify-content: center;
-}
-#pricing .card .card-bottom button {
-  width: 80%;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-#pricing .card .card-bottom button:hover {
-  color: white;
-  background-color: #0d6efd;
-}
-
-/*--------------------------------------------------------------
-# Counter
---------------------------------------------------------------*/
-.counter-box {
-  color: #fff;
-  text-align: center;
-}
-@media (min-width: 577px) {
-  .counter-box {
-    margin-bottom: 1.8rem;
-  }
-}
-
-.counter-ico {
-  margin-bottom: 1rem;
-}
-.counter-ico .ico-circle {
-  height: 60px;
-  width: 60px;
-  line-height: 1.5;
-  box-shadow: 0 0 0 10px #cde1f8;
-}
-
-.counter-num .counter {
-  font-size: 2rem;
-  margin-bottom: 0;
-}
-
-/*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+#work {
+  background-color: #d1d1d14a;
+}
 .work-box {
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #fff;
-  opacity: 0;
-  position: relative;
-  top: 120px;
-  transition: all 0.8s ease-in-out;
+  box-shadow: 5px 7px 13px 1px #00000059;
 }
-#work .active {
-  transition: all 0.8s ease-in-out;
-  opacity: 1;
-  top: 0;
+
+.work-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
 .work-box:hover img {
   transform: scale(1.3);
 }
 
 .work-img {
+  height: 250px;
   display: block;
   overflow: hidden;
+}
+
+.work-img.showBorder {
+  border-bottom: 1px solid rgba(90, 90, 90, 0.3);
 }
 .work-img img {
   transition: all 1s;
@@ -1178,7 +1065,7 @@ a:hover {
   padding: 0;
 }
 /*--------------------------------------------------------------
-# Princing
+# Pricing
 --------------------------------------------------------------*/
 .pricing .card {
   border-radius: 20px;
@@ -1200,27 +1087,6 @@ a:hover {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-#contact .slide-left {
-  position: relative;
-  right: 100px;
-  opacity: 0;
-  transition: all 0.9s ease-in-out;
-}
-#contact .active .slide-left {
-  right: 0;
-  opacity: 1;
-  transition: all 0.9s ease-in-out;
-}
-#contact .slide-right {
-  position: relative;
-  left: 100px;
-  opacity: 0;
-  transition: all 0.9s ease-in-out;
-}
-#contact .active .slide-right {
-  left: 0;
-  opacity: 1;
-}
 .footer-paralax {
   padding: 4rem 0 0 0;
 }
@@ -1322,7 +1188,7 @@ footer {
   text-align: center;
   color: #fff;
   padding-top: 25px;
-  background: #0062d3;
+  background: #191d2278;
 }
 footer .footerLinks li {
   padding: 0 10px;
@@ -1333,13 +1199,7 @@ footer .footerLinks li a:focus {
   padding: 10px 5px;
   font-size: 12px;
 }
-footer img {
-  width: 50px;
-  height: 50px;
-}
-footer .author {
-  background-color: #1e4f88;
-}
+
 footer .copyright {
   margin-bottom: 0.3rem;
 }
